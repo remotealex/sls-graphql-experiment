@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server-lambda");
+import { gql } from "apollo-server-lambda";
 
 export const schema = gql`
   type Query {
