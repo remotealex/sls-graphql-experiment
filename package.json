@@ -1,0 +1,22 @@
+{
+    "name": "sls",
+    "version": "1.0.0",
+    "main": "src/handler.js",
+    "license": "MIT",
+    "dependencies": {
+        "apollo-server-lambda": "^2.21.0",
+        "graphql": "^15.5.0",
+        "node-fetch": "^2.6.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.16",
+        "@babel/preset-env": "^7.12.16",
+        "babel-loader": "^8.2.2",
+        "babel-preset-env": "^1.7.0",
+        "imports-loader": "^2.0.0",
+        "serverless-offline": "^6.8.0",
+        "serverless-webpack": "^5.3.5",
+        "webpack": "^5.21.2",
+        "webpack-node-externals": "^2.5.2"
+    }
+}
