@@ -1,5 +1,7 @@
 service: ecologi-sls-test
 
+useDotenv: true
+
 provider:
   name: aws
   runtime: nodejs12.x
@@ -13,6 +15,8 @@ plugins:
   - serverless-webpack
 
 custom:
+  serverless-offline:
+    httpPort: 4000
   webpack:
     webpackConfig: "webpack.config.js"
     includeModules: true
@@ -26,3 +30,6 @@ functions:
           path: graphql
           method: post
           cors: true
+      - http:
+          path: graphql
+          method: get
