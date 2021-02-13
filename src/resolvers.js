@@ -14,6 +14,7 @@ async function getTodosByUserId(userId) {
   return todos;
 }
 
+// This doesn't include the users todos
 async function getAllUsers() {
   const response = await fetch(apiUrl + "/users");
   const users = await response.json();
